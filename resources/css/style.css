@@ -1,0 +1,57 @@
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
+  color: #222222;
+  font-size: 16px;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.container {
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+
+/* Header */
+
+.header {
+   display: flex;
+   align-items: center;
+   padding: 0 1.5rem;
+   height: 4rem;
+}
+.header .logo {
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+   color: #CCCCCC;
+   height: 2rem;
+}
+
+.header ul {
+   display: flex;
+}
+
+.header ul li {
+   margin-right: 1rem;
+}
+
+.header ul li:last-child {
+   margin-right: 0rem;
+}
+
+.header .logo span {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.header .logo strong {
+   color: #222222;
+}
+
+/* Main Banner */
