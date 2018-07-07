@@ -1,9 +1,14 @@
 /* Universal Styles */
 
 html {
-  font-family: "Helvetica", sans-serif;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   color: #222222;
   font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 a {
@@ -11,21 +16,50 @@ a {
    color: inherit;
 }
 
+h1 {
+   font-size: 50px;
+   line-height: 1.1;
+   font-weight: 700;
+}
+
+h3 {
+   font-size: 28px;
+   line-height: 1.1;
+   font-weight: 400;
+}
+
+.button span {
+   font-size: 18px;
+   line-height: 1.1;
+   font-weight: 400;
+   text-align: center;
+   background-color: blue;
+   padding: 1rem 5rem;
+   color: white;
+   border-radius: 0.19rem;
+   width: 250px;
+}
+
+.container-flex {
+   display: flex;
+}
+
 .container {
-   max-width: 960px;
+   max-width: 1200px;
    margin: 0 auto;
+   overflow: hidden; /*crops images to container*/
 }
 
 
-/* Header */
+/* Nav header */
 
-.header {
-   display: flex;
+nav .container-flex {
    align-items: center;
    padding: 0 1.5rem;
    height: 4rem;
 }
-.header .logo {
+
+nav .logo {
    flex-grow: 1;
    display: flex;
    align-items: center;
@@ -33,25 +67,54 @@ a {
    height: 2rem;
 }
 
-.header ul {
+nav ul {
    display: flex;
 }
 
-.header ul li {
+nav ul li {
    margin-right: 1rem;
 }
 
-.header ul li:last-child {
+nav ul li:last-child {
    margin-right: 0rem;
 }
 
-.header .logo span {
+nav .logo span {
    text-transform: uppercase;
    letter-spacing: 1px;
 }
 
-.header .logo strong {
+nav .logo strong {
    color: #222222;
 }
 
+
 /* Main Banner */
+
+.banner {
+   background-color: #EEE;
+   padding: 1.5rem 2rem;
+}
+
+.banner .hero-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 24px;
+   max-width: 450px;
+}
+
+.banner h1 {
+   margin-bottom: 1.5rem;
+}
+
+.banner p {
+   font-size: 18px;
+   line-height: 1.4;
+   margin-bottom: 3rem;
+}
+
+.banner img {
+   width: 60%;
+   height: 100%;
+}
