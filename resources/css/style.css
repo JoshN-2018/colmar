@@ -44,6 +44,7 @@ h3 {
 
 .column-left {
    width: 60%;
+   overflow: hidden;
 }
 
 .button {
@@ -137,4 +138,10 @@ nav .logo strong {
 .banner .column-left img {
    width: 100%;
    /* height: 100%; */
+}
+
+/* Section 1 */
+
+.section-1 .column-left img {
+   width: 100%;
 }
