@@ -41,14 +41,15 @@ h2 {
 }
 
 h3 {
-   font-size: 1.5rem;
+   font-size: 1.25rem;
    line-height: 1.1;
+   margin-bottom: 0.5rem;
 }
 
 h4 {
    font-size: 20px;
    line-height: 1.1;
-   margin-bottom: 0.25rem;
+   margin-bottom: 0.5rem;
 }
 
 p {
@@ -234,3 +235,47 @@ nav .logo strong {
 }
 
 /* Section 2 */
+
+.section-2 {
+   background-color: #EEE;
+   padding: 2rem 4.5rem;
+}
+
+.section-2 .container-flex {
+   flex-wrap: wrap;
+   /* padding-bottom: 32px */
+   /* justify-content: center; */
+}
+
+.feature-tile:nth-child(3n+2) {
+   margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.feature-tile {
+   width: 31%;
+   background-color: #FFF;
+   margin-bottom: 1.5rem;
+ }
+
+.feature-tile .content {
+   padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.feature-tile img {
+   width: 100%;
+}
+
+.feature-tile span {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #BBB;
+}
+
+.feature-tile p {
+   margin-top: 0.5rem;
+}
+
+.section-2 h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+}
