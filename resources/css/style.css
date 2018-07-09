@@ -5,6 +5,7 @@ html {
   font-family: 'Roboto', sans-serif;
   color: #222222;
   font-size: 16px;
+  font-weight: 400;
 }
 
 *, *:before, *:after {
@@ -18,9 +19,14 @@ a {
 
 h1,
 h2,
-h3,
+h3
 h4 {
    font-weight: 700;
+}
+
+h3,
+h4 {
+   font-weight: 500;
 }
 
 h1 {
@@ -192,7 +198,7 @@ nav .logo strong {
    padding: 0 1.5rem;
    border-left: 1px solid #EEEEEE;
 }
-
+         /* Feature block styling (global) */
 
 .feature-block {
    display: flex;
@@ -226,3 +232,5 @@ nav .logo strong {
 .feature-block .content p {
    margin-bottom: 0.5rem;
 }
+
+/* Section 2 */
