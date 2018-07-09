@@ -16,17 +16,44 @@ a {
    color: inherit;
 }
 
-h1 {
-   font-size: 40px;
-   line-height: 1.1;
+h1,
+h2,
+h3,
+h4 {
    font-weight: 700;
 }
 
-h3 {
-   font-size: 28px;
+h1 {
+   font-size: 40px;
    line-height: 1.1;
-   font-weight: 400;
 }
+
+h2 {
+   font-size: 30px;
+   line-height: 1.1;
+   margin-bottom: 1rem;
+}
+
+h3 {
+   font-size: 1.5rem;
+   line-height: 1.1;
+}
+
+h4 {
+   font-size: 20px;
+   line-height: 1.1;
+   margin-bottom: 0.25rem;
+}
+
+p {
+   line-height: 1.4;
+}
+
+p.caption {
+   font-size: 14px;
+   opacity: 0.8;
+}
+
 /* Universal structure elements */
 
 .container-flex {
@@ -116,6 +143,12 @@ nav .logo strong {
 .banner {
    background-color: #EEE;
 }
+/* temp break point */
+@media only screen and (max-width: 936px) {
+   .banner {
+      background-color: red;
+   }
+}
 
 .banner .hero-content {
    display: flex;
@@ -142,6 +175,54 @@ nav .logo strong {
 
 /* Section 1 */
 
+.column-left {
+   /* width: 60%; */
+   padding-right: 1.5rem;
+}
+
 .section-1 .column-left img {
    width: 100%;
+   margin-bottom: 2rem;
+}
+
+.section-1 .column-right {
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   padding: 0 1.5rem;
+   border-left: 1px solid #EEEEEE;
+}
+
+
+.feature-block {
+   display: flex;
+   align-items: center;
+   /* margin-bottom: 1rem; */
+   border-bottom: 1px solid #EEEEEE;
+   padding: 1rem 0;
+}
+
+.feature-block img{
+   width: 35%;
+   height: 100%;
+}
+
+/*image fix – come back to this*/
+.feature-block img.people-shadows {
+   /* width: 35%; */
+   /* height: 100%; */
+   overflow: hidden;
+}
+
+.feature-block .content {
+   /* width: 65%; */
+   padding-left: 1.5rem;
+}
+
+.feature-block .content a {
+   color: #278af1;
+}
+
+.feature-block .content p {
+   margin-bottom: 0.5rem;
 }
