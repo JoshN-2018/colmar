@@ -68,17 +68,16 @@ p.caption {
 }
 
 .container {
-   max-width: 960px;
+   max-width: 1050px;
    margin: 0 auto;
    overflow: hidden; /*crops images to container*/
 }
 .section {
-   padding: 2rem 1.5rem;
+   padding: 2rem 0rem;
 }
 
 .column-left {
    width: 60%;
-   overflow: hidden;
 }
 
 .button {
@@ -88,7 +87,7 @@ p.caption {
    height: 2.91rem;
    background-color: blue;
    border-radius: 0.19rem;
-   max-width: 250px;
+   max-width: 300px;
 }
 
 .button span {
@@ -161,8 +160,8 @@ nav .logo strong {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding: 48px;
-   max-width: 450px;
+   padding: 24px;
+   width: 40%
 }
 
 .banner h1 {
@@ -183,7 +182,7 @@ nav .logo strong {
 /* Section 1 */
 
 .column-left {
-   /* width: 60%; */
+   width: 60%;
    padding-right: 1.5rem;
 }
 
@@ -192,11 +191,11 @@ nav .logo strong {
    margin-bottom: 2rem;
 }
 
-.section-1 .column-right {
+.column-right {
    display: flex;
    flex-direction: column;
    width: 40%;
-   padding: 0 1.5rem;
+   padding-left: 1.5rem;
    border-left: 1px solid #EEEEEE;
 }
          /* Feature block styling (global) */
