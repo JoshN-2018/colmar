@@ -1,4 +1,4 @@
-/* Universal Styles */
+/* Global Styles */
 
 html {
   box-sizing: border-box;
@@ -61,23 +61,39 @@ p.caption {
    opacity: 0.8;
 }
 
-/* Universal structure elements */
+
+/* Global structure elements */
 
 .container-flex {
    display: flex;
 }
 
 .container {
-   max-width: 1050px;
+   max-width: 1098px;
    margin: 0 auto;
+   padding: 0 1.5rem;
    overflow: hidden; /*crops images to container*/
 }
+
 .section {
    padding: 2rem 0rem;
 }
 
 .column-left {
    width: 60%;
+   padding-right: 1.5rem;
+}
+
+.column-left img,video {
+   width: 100%;
+}
+
+.column-right {
+   display: flex;
+   flex-direction: column;
+   width: 40%;
+   padding-left: 1rem;
+   border-left: 1px solid #EEEEEE;
 }
 
 .button {
@@ -97,7 +113,6 @@ p.caption {
    text-align: center;
    padding: 0.8rem 1.5rem;
    color: white;
-   /* border-radius: 0.19rem; */
 }
 
 
@@ -144,6 +159,8 @@ nav .logo strong {
 
 /* FYI break point at 950 */
 
+
+
 /* Main Banner */
 
 .banner {
@@ -174,30 +191,14 @@ nav .logo strong {
    margin-bottom: 1.5rem;
 }
 
-.banner .column-left img {
-   width: 100%;
-   /* height: 100%; */
-}
 
-/* Section 1 */
+/* Section 1 – it doesnt hurt to keep...*/
 
-.column-left {
-   width: 60%;
-   padding-right: 1.5rem;
-}
 
 .section-1 .column-left img {
-   width: 100%;
    margin-bottom: 2rem;
 }
 
-.column-right {
-   display: flex;
-   flex-direction: column;
-   width: 40%;
-   padding-left: 1.5rem;
-   border-left: 1px solid #EEEEEE;
-}
          /* Feature block styling (global) */
 
 .feature-block {
@@ -233,11 +234,13 @@ nav .logo strong {
    margin-bottom: 0.5rem;
 }
 
+
+
 /* Section 2 */
 
 .section-2 {
    background-color: #EEE;
-   padding: 2rem 4.5rem;
+   padding: 2rem 3rem 2rem 4.5rem;
 }
 
 .section-2 .container-flex {
@@ -246,14 +249,14 @@ nav .logo strong {
    /* justify-content: center; */
 }
 
-.feature-tile:nth-child(3n+2) {
+/* .feature-tile:nth-child(3n+2) {
    margin: 0 1.5rem 1.5rem 1.5rem;
-}
+} */
 
 .feature-tile {
-   width: 31%;
+   width: 30%;
    background-color: #FFF;
-   margin-bottom: 1.5rem;
+   margin: 0 1.5rem 1.5rem 0;
  }
 
 .feature-tile .content {
@@ -275,6 +278,13 @@ nav .logo strong {
 }
 
 .section-2 h2 {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+/* Section 3 */
+
+.section-3 h2 {
    text-align: center;
    margin-bottom: 2rem;
 }
