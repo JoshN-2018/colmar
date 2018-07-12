@@ -38,6 +38,7 @@ h2 {
    font-size: 30px;
    line-height: 1.1;
    margin-bottom: 1rem;
+   /* padding: 2rem 0; */
 }
 
 h3 {
@@ -56,9 +57,9 @@ p {
    line-height: 1.4;
 }
 
-p.caption {
+.caption {
    font-size: 14px;
-   opacity: 0.8;
+   opacity: 0.7;
 }
 
 
@@ -72,7 +73,7 @@ p.caption {
    max-width: 1098px;
    margin: 0 auto;
    padding: 0 1.5rem;
-   overflow: hidden; /*crops images to container*/
+   overflow: hidden;
 }
 
 .section {
@@ -201,6 +202,10 @@ nav .logo strong {
 
          /* Feature block styling (global) */
 
+.section-1 .column-right .feature-block:first-child {
+   padding-top: 0;
+}
+
 .feature-block {
    display: flex;
    align-items: center;
@@ -212,13 +217,6 @@ nav .logo strong {
 .feature-block img{
    width: 35%;
    height: 100%;
-}
-
-/*image fix – come back to this*/
-.feature-block img.people-shadows {
-   /* width: 35%; */
-   /* height: 100%; */
-   overflow: hidden;
 }
 
 .feature-block .content {
@@ -245,13 +243,8 @@ nav .logo strong {
 
 .section-2 .container-flex {
    flex-wrap: wrap;
-   /* padding-bottom: 32px */
-   /* justify-content: center; */
 }
 
-/* .feature-tile:nth-child(3n+2) {
-   margin: 0 1.5rem 1.5rem 1.5rem;
-} */
 
 .feature-tile {
    width: 30%;
@@ -287,4 +280,44 @@ nav .logo strong {
 .section-3 h2 {
    text-align: center;
    margin-bottom: 2rem;
+}
+
+.section-3 .column-right .feature-block:first-child {
+   padding-top: 0;
+}
+
+.section-3 h2 {
+   padding-top: 2rem;
+}
+
+.section-3 video {
+   margin-bottom: 1.5rem;
+}
+
+.section-3 .column-left h3 {
+   margin-bottom: 0.5rem;
+}
+
+.section-3 .column-left p {
+   margin-bottom: 2rem;
+}
+
+
+/* Footer */
+
+footer span {
+   flex-grow: 1;
+}
+
+footer span,ul.foot {
+   padding: 1rem 1rem 3rem 1rem;
+   border-top: 1px solid #CCC;
+}
+
+footer ul {
+   display: flex;
+}
+
+footer li {
+   padding-left: 1rem;
 }
