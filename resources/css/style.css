@@ -136,6 +136,11 @@ nav .logo {
 nav .logo img {
    height: 2.5rem;
 }
+
+nav .logo .study-icon,.online-icon,.login-icon {
+   display: none;
+}
+
 nav ul {
    display: flex;
 }
