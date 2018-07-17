@@ -170,7 +170,8 @@ nav .logo strong {
 .banner .hero-content {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   /* justify-content: center;
+   align-items: center; */
    padding: 1.5rem;
    width: 40%;
 }
@@ -209,11 +210,9 @@ nav .logo strong {
       padding-top: 0;
    }
 
-   .banner .column-left {
-      flex-grow: 1;
-      height: 50%;
-      /* height: 50%; */
-      /* object-fit: cover; */
+   .banner .column-left img {
+      object-fit: cover;
+      height: 50vh; /* what a sexy piece of code!!!!*/
    }
 }
 
