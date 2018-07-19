@@ -1,5 +1,6 @@
 /* Global Styles */
 
+/* this is the latest */
 html {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -162,16 +163,39 @@ nav .logo span {
 nav .logo strong {
    color: #222222;
 }
+
+/* break point 665px */
+@media only screen and (max-width: 665px) {
+   nav ul,.colmar-text {
+      display: none;
+   }
+
+   nav .logo .study-icon,.online-icon,.login-icon {
+      display: block;
+   }
+
+   nav .logo {
+      justify-content: space-between;
+   }
+
+   nav .logo img {
+      height: 2rem;
+   }
 }
+
 
 
 /* Main Banner */
 
+.banner {
+   background-color: #EEE;
+}
+
 .banner .hero-content {
    display: flex;
    flex-direction: column;
-   /* justify-content: center;
-   align-items: center; */
+   justify-content: center;
+   /* align-items: center; */
    padding: 1.5rem;
    width: 40%;
 }
@@ -186,10 +210,6 @@ nav .logo strong {
    margin-bottom: 1.5rem;
 }
 
-.banner {
-   background-color: #EEE;
-}
-
 /* break point 900px */
 @media only screen and (max-width: 900px) {
    .banner .container-flex {
@@ -200,7 +220,7 @@ nav .logo strong {
       width: 100%;
    }
 
-   .banner .container,.column-left {
+   .banner .column-left {
       padding: 0;
       width: 100%;
       /* overflow: hidden; */
@@ -212,9 +232,11 @@ nav .logo strong {
 
    .banner .column-left img {
       object-fit: cover;
-      height: 50vh; /* what a sexy piece of code!!!!*/
+      object-position: center top;
+      height: 40vh; /* what a sexy piece of code!!!!*/
    }
 }
+
 
 /* Section 1 – it doesnt hurt to keep...*/
 
@@ -231,7 +253,7 @@ nav .logo strong {
 
 .feature-block {
    display: flex;
-   align-items: center;
+   align-items: top;
    /* margin-bottom: 1rem; */
    border-bottom: 1px solid #EEEEEE;
    padding: 1rem 0;
@@ -242,8 +264,12 @@ nav .logo strong {
    height: 100%;
 }
 
+/* turning off mobile images */
+.feature-block img.small{
+   display: none;
+}
+
 .feature-block .content {
-   /* width: 65%; */
    padding-left: 1.5rem;
 }
 
@@ -256,8 +282,47 @@ nav .logo strong {
 }
 
 
+@media only screen and (max-width: 750px) {
+   .section-1 .container-flex .column-left {
+      display: none;
+   }
+   .section-1 .container-flex .column-right {
+      width: 100%;
+   }
+   .section-1 .column-right .feature-block {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .section-1 .feature-block img.large {
+      display: none;
+   }
+   .section-1 .feature-block img.small {
+      display: block;
+      width: 100%;
+      height: 20vh;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      /* object-position: center top; */
+   }
+   .section-1 .feature-block .content {
+      padding: 0 1rem;
+   }
+   .column-right {
+      padding: 0 0;
+      border: 0;
+   }
+   .feature-block {
+      border: 0;
+   }
+}
+/* Image tweaks */
+/* @media only screen and (max-width: 500px) {
+   .section-1 .feature-block img.small {
+      height: 20vh;
+   }
+} */
 
-/* Section 2 */
+/* Section 2 - Start learning*/
 
 .section-2 {
    background-color: #EEE;
@@ -267,7 +332,6 @@ nav .logo strong {
 .section-2 .container-flex {
    flex-wrap: wrap;
 }
-
 
 .feature-tile {
    width: 30%;
@@ -298,7 +362,38 @@ nav .logo strong {
    margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 740px) {
+   .feature-tile img,p,.course-text { /*note this is turning off button text*/
+      display: none;
+   }
+   .section-2 .container-flex {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+   }
+   .section-2 {
+      background-color: #FFF;
+      padding: 2rem 1rem;
+   }
+   .section-2 .container {
+      padding: 0;
+   }
+   .feature-tile {
+      background-color: #EEE;
+      width: 100%;
+   }
+   .feature-tile h3 {
+      margin: 0;
+      padding-left: 1rem;
+   }
+   .feature-tile .content {
+      padding: 1.5rem 1rem;
+   }
+}
+
+
 /* Section 3 */
+
 
 .section-3 h2 {
    text-align: center;
@@ -323,6 +418,18 @@ nav .logo strong {
 
 .section-3 .column-left p {
    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 750px) {
+   .section-3 .column-right {
+      display: none;
+   }
+   .section-3 h3 {
+      display: none;
+   }
+   .section-3 .column-left {
+   width: 100%;
+   padding: 0;
+   }
 }
 
 
