@@ -314,6 +314,9 @@ nav .logo strong {
    .feature-block {
       border: 0;
    }
+   .section-1 {
+      padding-bottom: 0;
+   }
 }
 /* Image tweaks */
 /* @media only screen and (max-width: 500px) {
@@ -363,7 +366,7 @@ nav .logo strong {
 }
 
 @media only screen and (max-width: 740px) {
-   .feature-tile img,p,.course-text { /*note this is turning off button text*/
+   .feature-tile img,.course-text { /*note this is turning off button text*/
       display: none;
    }
    .section-2 .container-flex {
@@ -388,6 +391,10 @@ nav .logo strong {
    }
    .feature-tile .content {
       padding: 1.5rem 1rem;
+   }
+   .section-2 h2 {
+      padding-top: 2rem;
+      border-top: 1px solid #EEE;
    }
 }
 
@@ -429,6 +436,9 @@ nav .logo strong {
    .section-3 .column-left {
    width: 100%;
    padding: 0;
+   }
+   .section-3 h2 {
+      border-top: 1px solid #EEE;
    }
 }
 
