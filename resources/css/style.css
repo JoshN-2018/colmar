@@ -98,34 +98,6 @@ p {
    border-left: 1px solid #EEEEEE;
 }
 
-.button {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 2.91rem;
-   background-color: blue;
-   border-radius: 0.19rem;
-   max-width: 300px;
-   transition: all 0.15s ease;
-}
-
-   /* Psuedo classes! */
-.button:hover {
-   transform: scale(1.05);
-   box-shadow: 0px 2px 10px 1px #A6A8AB;
-}
-.button:active {
-   background-color: #0005BE;
-}
-
-.button span {
-   font-size: 1.125rem;
-   line-height: 1.1;
-   font-weight: 400;
-   text-align: center;
-   padding: 0.8rem 1.5rem;
-   color: white;
-}
 
 
 /* Nav header */
@@ -236,6 +208,36 @@ nav .logo strong {
    margin-bottom: 1.5rem;
 }
 
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 2.91rem;
+   background-color: blue;
+   border-radius: 0.19rem;
+   max-width: 300px;
+   transition: all 0.15s ease;
+}
+
+   /* Psuedo classes! */
+.button:hover {
+   transform: scale(1.05);
+   box-shadow: 0px 2px 10px 1px #A6A8AB;
+}
+.button:active {
+   background-color: #0005BE;
+}
+
+.button span {
+   font-size: 1.125rem;
+   line-height: 1.1;
+   font-weight: 400;
+   text-align: center;
+   padding: 0.8rem 1.5rem;
+   color: white;
+}
+
+
 /* break point 900px */
 @media only screen and (max-width: 900px) {
    .banner .container-flex {
@@ -254,6 +256,10 @@ nav .logo strong {
 
    .banner.section {
       padding-top: 0;
+   }
+
+   .banner .container {
+      padding: 0;
    }
 
    .banner .column-left img {
