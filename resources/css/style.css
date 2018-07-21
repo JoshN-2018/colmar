@@ -3,10 +3,10 @@
 /* this is the latest */
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #222222;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 *, *:before, *:after {
@@ -16,34 +16,39 @@ html {
 a {
    text-decoration: none;
    color: inherit;
+   font-weight: 400;
 }
 
 h1,
 h2,
-h3
+h3,
 h4 {
+   font-family: 'Zilla Slab', serif;
    font-weight: 700;
+   letter-spacing: 1px;
+   color: #23236f;
 }
 
 h3,
 h4 {
-   font-weight: 500;
+   font-weight: 600;
 }
 
 h1 {
-   font-size: 2.5rem;
+   font-size: 3rem;
    line-height: 1.1;
 }
 
 h2 {
-   font-size: 1.875rem;
+   font-size: 2.3rem;
+   color:
    line-height: 1.1;
    margin-bottom: 1rem;
    /* padding: 2rem 0; */
 }
 
 h3 {
-   font-size: 1.25rem;
+   font-size: 1.5rem;
    line-height: 1.1;
    margin-bottom: 0.5rem;
 }
@@ -71,7 +76,7 @@ p {
 }
 
 .container {
-   max-width: 1100px;
+   max-width: 1150px;
    margin: 0 auto;
    padding: 0 1.5rem;
    overflow: hidden;
@@ -117,7 +122,7 @@ nav .logo {
 }
 
 nav .logo img {
-   height: 2.5rem;
+   height: 2rem;
 }
 
 nav .logo .study-icon,.online-icon,.login-icon {
@@ -135,6 +140,11 @@ nav ul li {
    transition: all 0.2s ease;
 }
 
+nav a {
+   font-weight: 300;
+   font-size: 1.0625rem;
+}
+
 nav ul li:last-child {
    margin-right: 0rem;
 }
@@ -145,9 +155,11 @@ nav li:hover {
 }
 
 nav .logo span {
+   padding-left: 0.25rem;
    text-transform: uppercase;
-   letter-spacing: 1px;
-   font-size: 20px;
+   letter-spacing: 2px;
+   font-size: 1.75rem;
+   font-family: 'Zilla Slab', serif;
 }
 
 nav .logo strong {
@@ -155,7 +167,7 @@ nav .logo strong {
 }
 
 /* break point 665px */
-@media only screen and (max-width: 665px) {
+@media only screen and (max-width: 725px) {
    nav ul,.colmar-text {
       display: none;
    }
@@ -206,13 +218,14 @@ nav .logo strong {
    font-size: 1.125rem;
    line-height: 1.5;
    margin-bottom: 1.5rem;
+   font-weight: 400;
 }
 
 .button {
    display: flex;
    align-items: center;
    justify-content: center;
-   height: 2.91rem;
+   height: 3.5rem;
    background-color: blue;
    border-radius: 0.19rem;
    max-width: 300px;
@@ -221,7 +234,7 @@ nav .logo strong {
 
    /* Psuedo classes! */
 .button:hover {
-   transform: scale(1.05);
+   transform: scale(1.03);
    box-shadow: 0px 2px 10px 1px #A6A8AB;
 }
 .button:active {
@@ -528,6 +541,12 @@ footer ul {
 
 footer li {
    padding-left: 1rem;
+   transition: all 0.2s ease;
+}
+
+footer a:hover {
+   color: #222;
+   border-bottom: 1px solid #222;
 }
 
 @media only screen and (max-width: 750px) {
