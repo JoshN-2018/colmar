@@ -283,11 +283,18 @@ nav .logo strong {
    padding-top: 0;
 }
 
+.section-1 .column-right .feature-block:last-child {
+   border-bottom: none;
+}
+
+.column-right {
+   padding-left: 0;
+}
 .feature-block {
    display: flex;
    align-items: center;
    border-bottom: 1px solid #EEEEEE;
-   padding: 1rem 0;
+   padding: 1rem 0 1rem 1rem;
    transition: background-color 0.4s ease;
 }
 
@@ -352,6 +359,7 @@ nav .logo strong {
    }
    .feature-block {
       border: 0;
+      padding-left: 0;
    }
    .section-1 {
       padding-bottom: 0;
