@@ -71,7 +71,7 @@ p {
 }
 
 .container {
-   max-width: 1098px;
+   max-width: 1100px;
    margin: 0 auto;
    padding: 0 1.5rem;
    overflow: hidden;
@@ -318,14 +318,10 @@ nav .logo strong {
       padding-bottom: 0;
    }
 }
-/* Image tweaks */
-/* @media only screen and (max-width: 500px) {
-   .section-1 .feature-block img.small {
-      height: 20vh;
-   }
-} */
 
-/* Section 2 - Start learning*/
+
+/* Section 2 - Start learning */
+
 
 .section-2 {
    background-color: #EEE;
@@ -365,8 +361,15 @@ nav .logo strong {
    margin-bottom: 2rem;
 }
 
+/* Prevent wrapping before breakpoint */
+@media only screen and (max-width: 890px) {
+   .feature-tile {
+      width: 29%;
+    }
+}
+
 @media only screen and (max-width: 740px) {
-   .feature-tile img,.course-text { /*note this is turning off button text*/
+   .feature-tile img,.course-text {
       display: none;
    }
    .section-2 .container-flex {
@@ -460,4 +463,10 @@ footer ul {
 
 footer li {
    padding-left: 1rem;
+}
+
+@media only screen and (max-width: 750px) {
+   footer ul {
+      display: none;
+   }
 }
