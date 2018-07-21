@@ -16,6 +16,7 @@ html {
 a {
    text-decoration: none;
    color: inherit;
+   /* display: block; */
 }
 
 h1,
@@ -264,21 +265,21 @@ nav .logo strong {
    height: 100%;
 }
 
-/* turning off mobile images */
-.feature-block img.small{
-   display: none;
-}
-
 .feature-block .content {
    padding-left: 1.5rem;
 }
 
-.feature-block .content a {
+/* .feature-block .content a {
    color: #278af1;
-}
+} */
 
 .feature-block .content p {
    margin-bottom: 0.5rem;
+}
+
+/* turning off mobile images */
+.feature-block img.small{
+   display: none;
 }
 
 
@@ -387,6 +388,7 @@ nav .logo strong {
    .feature-tile {
       background-color: #EEE;
       width: 100%;
+      margin-bottom: 0.5rem;
    }
    .feature-tile h3 {
       margin: 0;
@@ -402,7 +404,7 @@ nav .logo strong {
 }
 
 
-/* Section 3 */
+/* Section 3 - Thesis exhibit */
 
 
 .section-3 h2 {
