@@ -1,6 +1,5 @@
 /* Global Styles */
 
-/* this is the latest */
 html {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -13,27 +12,29 @@ html {
   box-sizing: inherit;
 }
 
-a {
-   text-decoration: none;
-   color: inherit;
-   font-weight: 400;
-}
-
+   /* Heading family */
 h1,
 h2,
 h3,
 h4 {
    font-family: 'Zilla Slab', serif;
-   font-weight: 700;
-   letter-spacing: 1px;
    color: #23236f;
 }
 
+   /* Large heading weight */
+h1,
+h2 {
+   font-weight: 700;
+   letter-spacing: 1px;
+}
+
+   /* Small heading weight */
 h3,
 h4 {
    font-weight: 600;
+   letter-spacing: 1px;
 }
-
+   /* Heading Sizes */
 h1 {
    font-size: 3rem;
    line-height: 1.1;
@@ -43,7 +44,8 @@ h2 {
    font-size: 2.3rem;
    line-height: 1.1;
    margin-bottom: 1rem;
-   /* padding: 2rem 0; */
+   font-weight: 700;
+   letter-spacing: 1px;
 }
 
 h3 {
@@ -67,6 +69,13 @@ p {
    opacity: 0.7;
 }
 
+a {
+   text-decoration: none;
+   color: inherit;
+   font-weight: 400;
+}
+
+
 
 /* Global structure elements */
 
@@ -82,7 +91,7 @@ p {
 }
 
 .section {
-   padding: 2rem 0rem;
+   padding: 2rem 0;
 }
 
 .column-left {
@@ -103,6 +112,7 @@ p {
 }
 
 
+/* Section styling starts */
 
 /* Nav header */
 
@@ -117,7 +127,6 @@ nav .logo {
    display: flex;
    align-items: center;
    color: #CCCCCC;
-   /* height: 2rem; */
 }
 
 nav .logo img {
@@ -148,7 +157,7 @@ nav ul li:last-child {
    margin-right: 0rem;
 }
 
-    /* Psuedo classes */
+    /* psuedo class */
 nav li:hover {
    opacity: 1;
 }
@@ -165,7 +174,7 @@ nav .logo strong {
    color: #222222;
 }
 
-/* break point 665px */
+   /* break point 665px */
 @media only screen and (max-width: 725px) {
    nav ul,.colmar-text {
       display: none;
@@ -177,7 +186,7 @@ nav .logo strong {
       transition: opacity 0.2s ease;
    }
 
-   /* Psuedo class */
+   /* psuedo class */
    nav .logo .study-icon:hover,.online-icon:hover,.login-icon:hover,.lion-icon:hover {
       opacity: 1;
    }
@@ -204,7 +213,6 @@ nav .logo strong {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   /* align-items: center; */
    padding: 1.5rem;
    width: 40%;
 }
@@ -231,7 +239,7 @@ nav .logo strong {
    transition: all 0.15s ease;
 }
 
-   /* Psuedo classes! */
+   /* psuedo class */
 .button:hover {
    transform: scale(1.03);
    box-shadow: 0px 2px 10px 1px #A6A8AB;
@@ -249,8 +257,7 @@ nav .logo strong {
    color: white;
 }
 
-
-/* break point 900px */
+   /* break point 900px */
 @media only screen and (max-width: 900px) {
    .banner .container-flex {
       flex-direction: column;
@@ -263,7 +270,6 @@ nav .logo strong {
    .banner .column-left {
       padding: 0;
       width: 100%;
-      /* overflow: hidden; */
    }
 
    .banner.section {
@@ -282,15 +288,14 @@ nav .logo strong {
 }
 
 
-/* Section 1 – it doesnt hurt to keep...*/
 
+/* Section 1 – it doesnt hurt to keep...*/
 
 .section-1 .column-left img {
    margin-bottom: 2rem;
 }
 
-         /* Feature block styling (global) */
-
+   /* Feature block styling (global) */
 .section-1 .column-right .feature-block:first-child {
    padding-top: 0;
 }
@@ -315,12 +320,11 @@ nav .logo strong {
    height: 100%;
 }
 
-   /* Psuedo classes */
+   /* psuedo class */
 .feature-block:hover {
    background-color: #E0F5FF;
    cursor: pointer;
 }
-
 
 /* turning off mobile images */
 .feature-block img.small{
@@ -339,56 +343,62 @@ nav .logo strong {
    margin-bottom: 0.5rem;
 }
 
-
+   /* break point 750px */
 @media only screen and (max-width: 750px) {
    .section-1 .container-flex .column-left {
       display: none;
    }
+
    .section-1 .container-flex .column-right {
       width: 100%;
    }
+
    .section-1 .column-right .feature-block {
       flex-direction: column;
       align-items: flex-start;
    }
+
    .section-1 .feature-block img.large {
       display: none;
    }
+
    .section-1 .feature-block img.small {
       display: block;
       width: 100%;
       height: 20vh;
       object-fit: cover;
       margin-bottom: 1.5rem;
-      /* object-position: center top; */
    }
+
    .section-1 .feature-block .content {
       padding: 0 1rem;
 
-
    }
+
    .feature-block {
       padding-top: 0;
       margin-bottom: 1.5rem;
-      /* background-color: #F5F5F5; */
       box-shadow: 0px 1px 1px 0px #DDD;
    }
+
    .column-right {
       padding: 0 0;
       border: 0;
    }
+
    .feature-block {
       border: 0;
       padding-left: 0;
    }
+
    .section-1 {
       padding-bottom: 0;
    }
 }
 
 
-/* Section 2 - Start learning */
 
+/* Section 2 - Start learning */
 
 .section-2 {
    background-color: #E0F5FF;
@@ -403,11 +413,10 @@ nav .logo strong {
    width: 30%;
    background-color: #FFF;
    margin: 0 1.5rem 1.5rem 0;
-   /* transition: box-shadow 0.3s ease, background-color 0.2s ease; */
    transition: all 0.3s ease, 0.2s ease;
  }
 
-   /* Psuedo classes */
+   /* psuedo class */
 .feature-tile:hover {
    box-shadow: 0px 2px 10px 1px #CCC;
    cursor: pointer;
@@ -437,13 +446,14 @@ nav .logo strong {
    margin-bottom: 2rem;
 }
 
-/* Prevent wrapping before breakpoint */
+   /* Prevent wrapping before breakpoint */
 @media only screen and (max-width: 890px) {
    .feature-tile {
       width: 29%;
     }
 }
 
+   /* break point 740px */
 @media only screen and (max-width: 740px) {
    .feature-tile img,.course-text {
       display: none;
@@ -464,7 +474,6 @@ nav .logo strong {
       background-color: #E0F5FF;
       box-shadow: 0px 1px 1px 0px #CCC;
       width: 95%;
-      /* border-radius: 3px; */
       margin: 1rem auto;
       margin-top: 0;
    }
@@ -490,8 +499,8 @@ nav .logo strong {
 }
 
 
-/* Section 3 - Thesis exhibit */
 
+/* Section 3 - Thesis exhibit */
 
 .section-3 h2 {
    text-align: center;
@@ -517,17 +526,22 @@ nav .logo strong {
 .section-3 .column-left p {
    margin-bottom: 2rem;
 }
+
+   /* break point 750px */
 @media only screen and (max-width: 750px) {
    .section-3 .column-right {
       display: none;
    }
+
    .section-3 h3 {
       display: none;
    }
+
    .section-3 .column-left {
    width: 100%;
    padding: 0;
    }
+
    .section-3 h2 {
       border-top: 1px solid #EEE;
    }
@@ -559,6 +573,7 @@ footer a:hover {
    border-bottom: 1px solid #222;
 }
 
+   /* break point 750px */
 @media only screen and (max-width: 750px) {
    footer ul {
       display: none;
