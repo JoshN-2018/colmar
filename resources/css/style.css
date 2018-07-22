@@ -168,8 +168,21 @@ nav .logo strong {
    color: #222222;
 }
 
-   /* break point 665px */
+   /* break point 725px */
 @media only screen and (max-width: 725px) {
+
+   /* Create sticky header */
+   nav {
+      position: fixed;
+      z-index: 2;
+      background-color: white;
+      width: 100%;
+   }
+   .banner,.section, footer {
+      position: relative;
+      top: 65px;
+   }
+
    nav ul,.colmar-text {
       display: none;
    }
@@ -517,6 +530,10 @@ nav .logo strong {
 @media only screen and (max-width: 750px) {
    .section-3 .column-right {
       display: none;
+   }
+
+   .section-3 {
+      padding-top: 0;
    }
 
    .section-3 h3 {
