@@ -174,13 +174,15 @@ nav .logo strong {
    /* Create sticky header */
    nav {
       position: fixed;
+      top: 0;
       z-index: 2;
       background-color: white;
       width: 100%;
    }
-   .banner,.section, footer {
-      position: relative;
-      top: 65px;
+
+   /* off setting content for sticky header */
+   .banner {
+      margin-top: 4rem;
    }
 
    nav ul,.colmar-text {
